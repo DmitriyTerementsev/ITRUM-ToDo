@@ -95,28 +95,7 @@ const editText = (task) => {
 };
 
 const toDoList = document.querySelector('.deals');
-let tasks = [
-  {
-    checked: false,
-    date: 'Tue Nov 21 2023 14:27:08',
-    text: 'deal'
-  },
-  {
-    checked: true,
-    date: 'Tue Nov 21 2023 14:27:08',
-    text: 'deal1'
-  },
-  {
-    checked: true,
-    date: 'Tue Nov 21 2023 14:27:08',
-    text: 'deal3'
-  },
-  {
-    checked: false,
-    date: 'Tue Nov 21 2023 14:27:08',
-    text: 'deal4'
-  },
-];
+let tasks = [];
 
 const addDeal = () => {
   const dealTemplate = document.querySelector('#template').content;
