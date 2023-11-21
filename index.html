@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main class="main">
+      <div class="container">
+        <div class="description">
+          <h1 class="title">To Do List</h1>
+          <p class="day"></p>
+          <button class="button button_day-remove">
+            <img
+              src="./images/icons8-обновить-30.png"
+              alt="icon"
+              class="icon"
+            />
+          </button>
+        </div>
+        <div class="deals"></div>
+        <div class="deals-check"></div>
+        <div class="add-deal">
+          <button class="button button_add">
+            <img
+              src="./images/icons8-плюс-50.png"
+              alt="icon"
+              class="icon"
+            />
+          </button>
+          <input
+            type="text"
+            class="input"
+            placeholder="Введите новое дело"
+          />
+          <button class="button button_checked">
+            <img
+              src="./images/1492790910-94list_84237.png"
+              alt="icon"
+              class="icon"
+            />
+          </button>
+          <input type="date" id="todo" class="calendar" value="2022-11-23" min="2023-11-23" max="2024-12-31" />
+        </div>
+      </div>
+    </main>
+    <template id="template">
+      <div class="deal">
+        <p class="text"></p>
+        <div class="buttons">
+          <button class="button button_edit">
+            <img
+              src="./images/icons8-карандаш-30.png"
+              alt="icon"
+              class="icon"
+            />
+          </button>
+          <button class="button button_check">
+            <img
+              src="./images/icons8-галочка-48.png"
+              alt="icon"
+              class="icon"
+            />
+          </button>
+          <button class="button button_delete">
+            <img
+              src="./images/icons8-мусор-64.png"
+              alt="icon"
+              class="icon"
+            />
+          </button>
+        </div>
+      </div>
+    </template>
+    <footer class="footer"></footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
