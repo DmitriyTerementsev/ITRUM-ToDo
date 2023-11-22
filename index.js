@@ -14,6 +14,7 @@ let date = today.getDate();
 let day = today.getDay();
 
 let tasks = [];
+localStorage.setItem('task', JSON.stringify(tasks));
 let taskToEdit = null;
 
 const BUTTON_SAVE_TITLE = 'Save task';
