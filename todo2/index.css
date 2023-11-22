@@ -31,6 +31,7 @@
   margin-top: 50px;
   border: 2px solid white;
   display: flex;
+  outline: none;
 }
 
 .input {
@@ -38,10 +39,12 @@
   background-color: #444444;
   width: 100%;
   outline: none;
+  box-sizing: border-box;
 }
 
 .input:focus {
-  border: 1px solid blue;
+  outline: none;
+  box-shadow: 0 0 10px 5px #1E90FF;
 }
 
 .calendar {
@@ -110,6 +113,30 @@
 .button:hover {
   cursor: pointer;
   opacity: 0.5;
+}
+
+.button_check:hover {
+  border-color: lightgreen;
+}
+
+.button_show-checked:hover {
+  border-color: lightgreen;
+}
+
+.button_delete:hover {
+  border-color: red;
+}
+
+.button_delete-all:hover {
+  border-color: red;
+}
+
+.button_edit:hover {
+  border-color: orange
+}
+
+.button_submit:hover {
+  border-color: #1E90FF;
 }
 
 .tasks {

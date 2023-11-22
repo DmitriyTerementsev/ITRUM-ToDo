@@ -45,7 +45,6 @@ const checkTask = (evt) => {
 
 const deleteTask = (evt) => {
   const task = evt.target.closest('.task');
-  console.log(task.id);
   task.remove();
   for (let i = 0; i < tasks.length; i++) {
     if (task.id == tasks[i].id) {
@@ -143,12 +142,11 @@ function renderByDay() {
   });
 }
 calendar.value = `${year}-${month}-${date}`;
-calendar.placeholder = calendar.value
+calendar.placeholder = calendar.value;
 renderByDay();
 
-
 calendar.addEventListener('change', () => {
-  calendar.placeholder = calendar.value
+  calendar.placeholder = calendar.value;
   reRenderTasks();
   renderByDay();
 });
