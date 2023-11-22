@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.root {
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.main {
+  width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.today {
+  font-size: 20px;
+  text-align: center;
+}
+
+.form {
+  margin-top: 50px;
+  border: 2px solid white;
+  display: flex;
+}
+
+.input {
+  padding: 15px 0 15px 15px;
+  background-color: #444444;
+  width: 100%;
+  outline: none;
+}
+
+.input:focus {
+  border: 1px solid blue;
+}
+
+.calendar {
+  color: black;
+  background-color: black;
+  border: 0;
+  color: white;
+  position: relative;
+}
+
+.calendar:focus {
+  outline: none;
+}
+
+.day {
+  margin: 20px auto;
+}
+
+.day:hover {
+  cursor: pointer;
+}
+
+.calendar:hover {
+  cursor: pointer;
+}
+
+.calendar::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+.calendar::-webkit-inner-spin-button,
+.calendar::-webkit-clear-button {
+  z-index: -10;
+}
+
+.calendar::-webkit-input-placeholder {
+  z-index: 99;
+}
+
+.calendar:placeholder {
+  z-index: 99;
+}
+.calendar:not(.has-value):before {
+  content: attr(placeholder);
+  display: none;
+}
+
+.button {
+  width: 100px;
+  height: 50px;
+  appearance: none;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin: auto;
+  background-color: black;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.tasks {
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.text {
+  margin: auto;
+}
+
+.checked {
+  border: 2px solid green;
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body class="root">
+    <header class="header"></header>
+    <main class="main">
+      <h1 class="title">ToDo</h1>
+      <div class="day">
+        <input
+          type="date"
+          class="calendar"
+          value="2023-11-20"
+          min="2023-11-20"
+          max="2024-12-31"
+          placeholder=""
+        />
+      </div>
+
+      <div class="buttons">
+        <button class="button button_delete-all">Delete All</button>
+        <button class="button button_show-checked">Show Checked</button>
+      </div>
+
+      <form class="form">
+        <input type="text" class="input" placeholder="input task" />
+        <button class="button button_submit" type="submit">Add Task</button>
+      </form>
+      <div class="tasks"></div>
+    </main>
+    <template id="template">
+      <div class="task">
+        <p class="text"></p>
+        <div class="buttons">
+          <button class="button button_edit">Edit</button>
+          <button class="button button_check">Check</button>
+          <button class="button button_delete">Delete</button>
+        </div>
+      </div>
+    </template>
+    <footer class="footer"></footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
