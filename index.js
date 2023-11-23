@@ -87,11 +87,12 @@ function addTaskToArr() {
 
 form.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  if (input.value == '') {
+  if (input.value.trim() == '') {
     return null;
   } else if (taskToEdit) {
     enableEditMode();
   } else {
+
     addTaskToArr();
   }
 });
